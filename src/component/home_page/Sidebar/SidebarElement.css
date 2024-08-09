@@ -1,0 +1,12 @@
+.bar-element {
+    background-color: var(--bgColor);
+    color: aliceblue;
+    width: 20vh;
+    height: 2vh;
+    transition: transform 1s, top 1s, left 1s;
+}
+
+.bar-element:hover {
+    width: 25vh;
+    height: 3vh;
+}

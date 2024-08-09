@@ -1,0 +1,31 @@
+.Card-Body {
+    width: 140px;
+    height: 240px;
+    background-color: #D9D9D9;  
+    border-color: black;
+    border-style: groove;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Eng-Word {
+    font-size: medium;
+    color: black;
+}
+
+.Tr-Word {
+    font-size: small;
+    color: chocolate;
+    overflow: auto;
+    word-wrap: break-word;
+    white-space: normal;
+    max-height: 140px;
+    padding-inline: 5px;
+    overflow: hidden;
+}   
+
+.symbol {
+    font-size: medium;
+}

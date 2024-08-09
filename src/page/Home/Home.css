@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 40vh;
+  max-height: 89vh;
+  overflow-y: auto;
+  height: auto;
+}
+
+.navbar {
+  height: 10vh;
+}
+
+.content {
+  width: 160vh;
+}
