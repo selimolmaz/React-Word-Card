@@ -17,6 +17,7 @@ function HomePage() {
     const [selectedChapterId, setSelectedChapterId] = useState(8); // Başlangıçta null
     const [wordCards, setWordCards] = useState([]);
     const [error, setError] = useState(null);
+    const [chapterName, serChapterName] = useState('');
 
     useEffect(() => {
         const fetchChapters = async () => {
@@ -44,13 +45,14 @@ function HomePage() {
         fetchWordCards();
     }, [selectedChapterId]);
 
-    function handleChapterClick(chapterId) {
+    function handleChapterClick(chapterId, chapterName) {
         setSelectedChapterId(chapterId);
+        serChapterName(chapterName);
     }
 
     return (
         <div>
-            <Navbar className="navbar" />
+            <Navbar className="navbar" chapterName={chapterName}/>
 
             <div className="container">
                 <Content>
@@ -64,7 +66,7 @@ function HomePage() {
                         <SideBarElement
                             key={chapter.id}
                             name={chapter.chapterName}
-                            onClick={() => handleChapterClick(chapter.id)}
+                            onClick={() => handleChapterClick(chapter.id, chapter.chapterName)}
                             index={index}
                         />
                     ))}
