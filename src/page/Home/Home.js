@@ -14,10 +14,10 @@ import ErrorCardStack from '../../component/new_card/error_card/ErrorCardStack';
 function HomePage() {
 
     const [chapters, setChapters] = useState([]);
-    const [selectedChapterId, setSelectedChapterId] = useState(8); // Başlangıçta null
+    const [selectedChapterId, setSelectedChapterId] = useState(null); // Başlangıçta null
     const [wordCards, setWordCards] = useState([]);
     const [error, setError] = useState(null);
-    const [chapterName, serChapterName] = useState('');
+    const [chapterName, serChapterName] = useState('Bir Chapter Seçiniz');
 
     useEffect(() => {
         const fetchChapters = async () => {
