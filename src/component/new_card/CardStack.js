@@ -34,7 +34,7 @@ function CardStack({ data }) {
         {cards.map((cardData, index) => (
           <div key={cardData.id || index} className='card' style={{
               top: `${(index * 5) + 40}px`,  // Yukarıdan kaydırma miktarı
-              left: `${(index * -10) + 200}px`, // Soldan kaydırma miktarı
+              left: `${(index * -10) + 200}px`,  // Soldan kaydırma miktarı
             }}>
             <CardView data = {cardData} />
           </div>
