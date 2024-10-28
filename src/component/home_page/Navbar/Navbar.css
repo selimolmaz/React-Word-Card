@@ -1,6 +1,24 @@
 .navbar {
-    background-color: whitesmoke;
-    border-color: black;
-    border-style: dashed;
-    /* Diğer stil özellikleri */
-  }
+  display: flex; /* Navbar'ı bir flex container yapar */
+  background-color: whitesmoke;
+  justify-content: space-around; /* İçerikleri eşit aralıklarla dağıtır */
+  border-style: ridge;
+
+}
+
+.chapter-container {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  
+  margin: 1vh;
+}
+
+.chapter-label {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.chapter-name {
+  flex: 1;
+}
